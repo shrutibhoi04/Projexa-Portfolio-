@@ -9,7 +9,7 @@ export function RequestForm() {
     email: '',
     service: '',
     deadline: '',
-    description: ''
+    message: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -152,7 +152,7 @@ export function RequestForm() {
               <textarea
                 id="description"
                 name="message"
-                value={formData.description}
+                value={formData.message}
                 onChange={handleChange}
                 required
                 rows={5}
